@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xooe2wN2uU1jIIC0sZ5Rmq32VbGE8zllYs9hye07oE+GTmsWI1gD2VJqwkVj0GC5pe7eyAoju6nE1JLtvWnFdA==",
+  "success": true,
+  "projectFilePath": "/home/minhpq/sourcecodes/dotnet/myWebApp/myWebApp.csproj",
+  "expectedPackageFiles": [
+    "/home/minhpq/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
