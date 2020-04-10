@@ -35,19 +35,23 @@ namespace myWebApp
         {
             try
             {
+                var content = "đây là nội dung bài báo";
+                var websiteId = "5e69f6856d821625ce37d8d8";
+                var httpCallback = "https://callback.com/webhooks";
+                var token = "fa902fa0mfa02lf09";
 
                 TextToSpeech tts = new TextToSpeech
                 {
-                    content = "alo",
-                    websiteId = "5e69f6856d821625ce3dfasf3",
-                    httpCallback = "https://callback.com/webhooks",
+                    content = content,
+                    websiteId = websiteId,
+                    httpCallback = httpCallback,
                 };
 
                 var jsonRequest = JsonConvert.SerializeObject(tts);
                 var url = "https://articles.vbee.vn/api/articles";
                 var data = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
                 using var client = new HttpClient();
-                client.DefaultRequestHeaders.Add("Authorization", "kP8FVep10h0tLGd7");
+                client.DefaultRequestHeaders.Add("Authorization", token);
 
                 HttpResponseMessage response = await client.PostAsync(url, data);
                 string result = response.Content.ReadAsStringAsync().Result;
