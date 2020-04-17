@@ -35,23 +35,23 @@ namespace myWebApp
         
         static async Task RunAsync()
         {
-           var content = "đây là nội dung bài báo ahihi";
+            var id = "100";
+            var content = "đây là nội dung bài báo";
+            var voices = new List<Voice>();
+            var voice = new Voice();
+            voice.id = "sg_female_thaotrinh_dialog_48k-hsmm";
+            voices.Add(voice);
            
-           var voices = new List<Voice>();
-           var voice = new Voice();
-           voice.id = "sg_female_thaotrinh_dialog_48k-hsmm";
-           voices.Add(voice);
-           
-           await Synthesis(content, voices);
+            await Synthesis(id, content, voices);
         }
 
-        static async Task<bool> Synthesis(string content, List<Voice> voices)
+        static async Task<bool> Synthesis(string id, string content, List<Voice> voices)
         {
             try
             {
-                var websiteId = "5e99a4986kj875f937";
-                var httpCallback = "https://moc.portal/api/tts-callback";
-                var token = "BFasdfas092oifa0faNYpWsK11I";
+                var websiteId = "5e99a4986d82161f2675f937";
+                var httpCallback = $"https://moc.portal/api/tts-callback?id={id}";
+                var token = "BFIHBCHCJGHCDANYpWsK11I";
 
                 TextToSpeech tts = new TextToSpeech
                 {
