@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/minhpq/sourcecodes/dotnet/myWebApp/myWebApp.csproj",
+  "FilePath": "/home/minhpq/sourcecodes/tts-article-with-csharp/myWebApp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,38 +20521,38 @@
   "RootNamespace": "myWebApp",
   "Documents": [
     {
-      "FilePath": "/home/minhpq/sourcecodes/dotnet/myWebApp/Pages/Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/minhpq/sourcecodes/dotnet/myWebApp/Pages/_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/minhpq/sourcecodes/dotnet/myWebApp/Pages/Shared/_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/minhpq/sourcecodes/dotnet/myWebApp/Pages/Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/minhpq/sourcecodes/dotnet/myWebApp/Pages/_ViewImports.cshtml",
+      "FilePath": "/home/minhpq/sourcecodes/tts-article-with-csharp/Pages/_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/minhpq/sourcecodes/dotnet/myWebApp/Pages/Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
+      "FilePath": "/home/minhpq/sourcecodes/tts-article-with-csharp/Pages/Shared/_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/minhpq/sourcecodes/dotnet/myWebApp/Pages/Shared/_ValidationScriptsPartial.cshtml",
+      "FilePath": "/home/minhpq/sourcecodes/tts-article-with-csharp/Pages/_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/minhpq/sourcecodes/tts-article-with-csharp/Pages/Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/minhpq/sourcecodes/tts-article-with-csharp/Pages/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/minhpq/sourcecodes/tts-article-with-csharp/Pages/Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/minhpq/sourcecodes/tts-article-with-csharp/Pages/Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

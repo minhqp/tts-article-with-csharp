@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/minhpq/sourcecodes/dotnet/myWebApp/myWebApp.csproj": {}
+    "/home/minhpq/sourcecodes/tts-article-with-csharp/myWebApp.csproj": {}
   },
   "projects": {
-    "/home/minhpq/sourcecodes/dotnet/myWebApp/myWebApp.csproj": {
+    "/home/minhpq/sourcecodes/tts-article-with-csharp/myWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/minhpq/sourcecodes/dotnet/myWebApp/myWebApp.csproj",
+        "projectUniqueName": "/home/minhpq/sourcecodes/tts-article-with-csharp/myWebApp.csproj",
         "projectName": "myWebApp",
-        "projectPath": "/home/minhpq/sourcecodes/dotnet/myWebApp/myWebApp.csproj",
+        "projectPath": "/home/minhpq/sourcecodes/tts-article-with-csharp/myWebApp.csproj",
         "packagesPath": "/home/minhpq/.nuget/packages/",
-        "outputPath": "/home/minhpq/sourcecodes/dotnet/myWebApp/obj/",
+        "outputPath": "/home/minhpq/sourcecodes/tts-article-with-csharp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/minhpq/.nuget/NuGet/NuGet.Config"

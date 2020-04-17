@@ -2,8 +2,8 @@ using System;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Text;
+using System.Collections.Generic;
 using Newtonsoft.Json;
-
 
 namespace myWebApp
 {
@@ -12,11 +12,18 @@ namespace myWebApp
         public string content { get; set; }
         public string websiteId { get; set; }
         public string httpCallback { get; set; }
+        public List<Voice> voices { get; set; }
     }
 
     public class TextToSpeechResponse
     {
         public int status { get; set; }
+    }
+
+    public class Voice
+    {
+        public string id { get; set; }
+        public float rate { get; set; }
     }
 
     public class Program
@@ -28,23 +35,30 @@ namespace myWebApp
         
         static async Task RunAsync()
         {
-           await Synthesis();
+           var content = "đây là nội dung bài báo ahihi";
+           
+           var voices = new List<Voice>();
+           var voice = new Voice();
+           voice.id = "sg_female_thaotrinh_dialog_48k-hsmm";
+           voices.Add(voice);
+           
+           await Synthesis(content, voices);
         }
 
-        static async Task<bool> Synthesis()
+        static async Task<bool> Synthesis(string content, List<Voice> voices)
         {
             try
             {
-                var content = "đây là nội dung bài báo";
-                var websiteId = "5e69f6856d821625ce37d8d8";
-                var httpCallback = "https://mos.portal/api/tts-callback";
-                var token = "fa902fa0mfa02lf09";
+                var websiteId = "5e99a4986kj875f937";
+                var httpCallback = "https://moc.portal/api/tts-callback";
+                var token = "BFasdfas092oifa0faNYpWsK11I";
 
                 TextToSpeech tts = new TextToSpeech
                 {
                     content = content,
                     websiteId = websiteId,
                     httpCallback = httpCallback,
+                    voices = voices,
                 };
 
                 var jsonRequest = JsonConvert.SerializeObject(tts);
@@ -61,7 +75,7 @@ namespace myWebApp
                 return false;
             }
             catch (Exception e) {
-                Console.WriteLine(e.Message);
+                Console.WriteLine(e);
                 return false;
             }
         }
