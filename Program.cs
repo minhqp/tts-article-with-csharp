@@ -37,7 +37,7 @@ namespace myWebApp
             {
                 var content = "đây là nội dung bài báo";
                 var websiteId = "5e69f6856d821625ce37d8d8";
-                var httpCallback = "https://callback.com/webhooks";
+                var httpCallback = "https://mos.portal/api/tts-callback";
                 var token = "fa902fa0mfa02lf09";
 
                 TextToSpeech tts = new TextToSpeech
